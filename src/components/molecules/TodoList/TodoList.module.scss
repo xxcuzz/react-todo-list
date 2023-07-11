@@ -1,0 +1,38 @@
+.TodoList {
+  position: relative;
+  min-width: 250px;
+  max-width: 500px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 900px) {
+  .TodoList {
+    top: -205px;
+  }
+}
+
+.TodoItems {
+  margin-top: 20px;
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: 8px 40px 24px 0px rgba(66, 68, 90, 0.57);
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.NoItems {
+  background-color: white;
+  border-radius: 8px 0px 0px 0px;
+  border-bottom: 1px solid lightgray;
+}
+
+.NoItems p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  color: grey;
+  padding: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+}

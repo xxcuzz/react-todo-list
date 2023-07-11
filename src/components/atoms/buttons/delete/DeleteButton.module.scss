@@ -1,0 +1,52 @@
+.Deletion {
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: .3s;
+  border: none;
+  background-color: white;
+}
+
+.Deletion[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.Can {
+  width: 18px;
+}
+
+.Can path {
+  fill: white;
+}
+
+.Deletion:hover {
+  background-color: #72a3f753;
+}
+
+.Deletion:hover .Can {
+  animation: canAnimation 0.4s both;
+}
+
+@keyframes canAnimation {
+
+  0%,
+  100% {
+    transform-origin: bottom;
+  }
+
+  50% {
+    transform: rotateZ(5deg);
+  }
+}
+
+.Deletion:active {
+  transform: scale(0.8);
+}

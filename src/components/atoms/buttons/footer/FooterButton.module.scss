@@ -1,0 +1,29 @@
+.FooterButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.FooterButton__Hover {
+  position: relative;
+  color: grey;
+  padding-bottom: 7px;
+}
+
+.FooterButton__Hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: grey;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+
+.FooterButton:hover .FooterButton__Hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

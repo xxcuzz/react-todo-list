@@ -1,0 +1,13 @@
+.Text {
+  visibility: hidden;
+}
+
+@media (min-width: 1240px) {
+  .Text {
+    visibility: visible;
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: .7rem;
+  }
+}

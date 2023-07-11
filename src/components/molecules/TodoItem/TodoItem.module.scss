@@ -1,0 +1,18 @@
+.InputGroup {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+}
+
+.InputGroup span {
+  cursor: pointer;
+}
+
+.InputGroup>button:last-of-type {
+  margin-left: auto;
+}
+
+.CrossOut {
+  text-decoration: line-through;
+}

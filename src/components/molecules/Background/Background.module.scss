@@ -1,0 +1,29 @@
+.BackgroundImage {
+  display: none;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .BackgroundImage {
+    display: inline-block;
+  }
+}
+
+.Gradient {
+	display: inline-block;
+	position: relative;
+	line-height: 0;
+}
+
+.Gradient:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+	background-image: linear-gradient(to left, #72a2f7, #b760ed);
+	opacity: 0.8;
+}
